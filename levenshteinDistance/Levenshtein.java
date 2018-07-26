@@ -36,6 +36,14 @@ public class Levenshtein {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(new Levenshtein().minEditDistance("Orchestra", ""));
+		String longString = "This string is very long.";
+	    String other = "This string" + " is " + "very long.";
+	    
+	    String is = " is ";
+	    String other1 = "This string" +" is "+ "very long.";
+
+	    System.out.println(longString == other1); //prints false
+	    System.out.println(longString == other); //prints true
 	}
 
 }
